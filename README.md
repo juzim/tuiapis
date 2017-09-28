@@ -1,6 +1,6 @@
 # TUIAPIS
 
-A collection of scripts to get infotmation from APIs in [t-ui launcher](https://play.google.com/apps/testing/ohi.andre.consolelauncher) for Android.
+A collection of scripts to get information from APIs and print them out in [t-ui launcher](https://play.google.com/apps/testing/ohi.andre.consolelauncher) for Android.
 
 ## Setup
 
