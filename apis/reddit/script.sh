@@ -23,7 +23,7 @@ function seturlparams {
 function printResults {
   IFS=$'\n'
   for i in $(cat "$TMPDIR/tmp_$NAME.json" | grep "data\",\"title\""); do
-    TITLE=$(echo "$i" | awk -F '"' '{print $10}')
+    TITLE=$(echo "$i" | awk -F $"\t" '{print $2}' | sed 's/\\"/"/g')
     printf '%s %s\n' $BULLET $TITLE
   done
 }
