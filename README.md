@@ -27,3 +27,8 @@ Issues
 Command
 
 ```./tuiapis.sh weather-darksky```
+
+## Troubleshooting
+- To download JSON.awk, go to the linked repository and click on the file "JSON.awk" and then on the button "raw"
+- Replacing the '--silent' option in curl with '-vv' helps with debugging
+- Check the content of the files in the tmp folder for the APIs response
