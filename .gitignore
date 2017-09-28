@@ -1,4 +1,4 @@
 helper/*
-!helper/.gitkeep
 config/*
-!config/.gitkeep
+tmp/*
+!**/.gitkeep

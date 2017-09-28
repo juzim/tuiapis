@@ -1,7 +1,9 @@
-#!/bin/bash
-
 function seturl {
   URL="https://api.darksky.net/forecast/$APIKEY/$LONG,$LAT?exclude=alerts,flags,minutely&units=si"
+}
+
+function seturlparams {
+  URLPARAMS=
 }
 
 function printResults {

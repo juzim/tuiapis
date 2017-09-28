@@ -4,7 +4,7 @@ A collection of scripts to get infotmation from APIs in [t-ui launcher](https://
 
 ## Setup
 
-1. Download [JSON.sh](https://github.com/dominictarr/JSON.sh) into the /helper directory and give it execution rights (chmod +x helper/JSON.sh)
+1. Download [JSON.awk](https://github.com/step-/JSON.awk) into the /helper directory
 2. Copy all exiting config files from the folders under "apis" (just skip those without configs) to "config" and adjust the fields
 
 ## APIS
