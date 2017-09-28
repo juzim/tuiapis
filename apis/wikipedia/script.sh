@@ -12,6 +12,6 @@ function seturlparams {
 }
 
 function printResults {
-  EXCTRACT=$(echo "$JSON" | grep "\"extract\"]" | awk -F $"\t" '{print $2}' | sed 's/\\u[0-9]*//g' | sed 's/\\n/\n/g' | sed 's/\\"/"/g')
+  EXCTRACT=$(cat "$TMPDIR/tmp_$NAME.json" | grep "\"extract\"]" | awk -F $"\t" '{print $2}' | sed 's/\\u[0-9]*//g' | sed 's/\\n/\n/g' | sed 's/\\"/"/g')
   printf '%s' "$EXCTRACT"
 }
