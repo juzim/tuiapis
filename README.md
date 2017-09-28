@@ -28,6 +28,32 @@ Command
 
 ```./tuiapis.sh weather-darksky```
 
+
+### Reddit
+Fetches top posts of a subreddit
+
+Command
+
+```./tuiapis.sh reddit SUBREDDIT```
+
+
+Example
+
+```./tuiapis.sh reddit news```
+
+### Newsapi
+Fetches headlines from news sources from newsapi.org
+
+All sources are listed at https://newsapi.org/sources
+
+Command
+
+```./tuiapis.sh newsapi SOURCE```
+
+Example
+
+```./tuiapis.sh newsapi cnn```
+
 ## Troubleshooting
 - To download JSON.awk, go to the linked repository and click on the file "JSON.awk" and then on the button "raw"
 - Replacing the '--silent' option in curl with '-vv' helps with debugging

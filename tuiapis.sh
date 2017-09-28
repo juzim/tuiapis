@@ -61,6 +61,6 @@ fi
 echo -e $TMPDIR/tmp_$NAME.txt | awk -f $HELPERDIR/JSON.awk > $TMPDIR/tmp_$NAME.json
 
 printResults
-#
-# rm "$TMPDIR/tmp_$NAME.txt"
-# rm "$TMPDIR/tmp_$NAME.json"
+
+rm "$TMPDIR/tmp_$NAME.txt"
+rm "$TMPDIR/tmp_$NAME.json"
