@@ -4,8 +4,9 @@ A collection of scripts to get information from APIs and print them out in [t-ui
 
 ## Setup
 
-1. Download [JSON.awk](https://github.com/step-/JSON.awk) into the /helper directory
-2. Copy all exiting config files from the folders under "apis" (just skip those without configs) to "config" and adjust the fields
+1. Download the latest release from https://github.com/juzim/tuiapis/releases and unzip/untar it
+2. Download [JSON.awk](https://github.com/step-/JSON.awk) into the helper directory
+3. Copy all exiting config files from the folders under "apis" (just skip those without configs) to "config" and adjust the fields
 
 ## APIS
 ### Wikipedia
