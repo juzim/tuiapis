@@ -49,7 +49,7 @@ else
 fi
 
 # fetch data
-curl -o $TMPDIR/tmp_$NAME.txt $VERBOSE $URLPARAMS $URL
+curl -o $TMPDIR/tmp_$NAME.txt $VERBOSE $URLPARAMS "$URL"
 
 if [ ! -f $TMPDIR/tmp_$NAME.txt ]
 then
@@ -61,6 +61,6 @@ fi
 echo -e $TMPDIR/tmp_$NAME.txt | awk -f $HELPERDIR/JSON.awk > $TMPDIR/tmp_$NAME.json
 
 printResults
-
-rm "$TMPDIR/tmp_$NAME.txt"
-rm "$TMPDIR/tmp_$NAME.json"
+#
+# rm "$TMPDIR/tmp_$NAME.txt"
+# rm "$TMPDIR/tmp_$NAME.json"

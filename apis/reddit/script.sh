@@ -4,7 +4,6 @@ else
   SUBREDDIT=$1
 fi
 
-
 if [ -z "$2" ]; then
   LIMIT=5
 else
