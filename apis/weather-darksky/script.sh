@@ -7,8 +7,8 @@ function seturlparams {
 }
 
 function printResults {
-  CURRENTLY=$(echo "$JSON" | grep "currently\",\"summary" | awk -F '"' '{print $6}')
-  HOURLY=$(echo "$JSON" | grep "hourly\",\"summary" | awk -F '"' '{print $6}')
-  DAILY=$(echo "$JSON" | grep "daily\",\"summary" | awk -F '"' '{print $6}')
+  CURRENTLY=$(cat "$TMPDIR/tmp_$NAME.json" | grep "currently\",\"summary" | awk -F '"' '{print $6}')
+  HOURLY=$(cat "$TMPDIR/tmp_$NAME.json" | grep "hourly\",\"summary" | awk -F '"' '{print $6}')
+  DAILY=$(cat "$TMPDIR/tmp_$NAME.json" | grep "daily\",\"summary" | awk -F '"' '{print $6}')
   printf "%s\n%s\n%s" "$CURRENTLY" "$HOURLY" "$DAILY"
 }
