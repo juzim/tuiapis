@@ -2,6 +2,8 @@
 
 A collection of scripts to get information from APIs and print them out in [t-ui launcher](https://play.google.com/apps/testing/ohi.andre.consolelauncher) for Android.
 
+Video walktrough: https://www.youtube.com/watch?v=mceulRDLyww
+
 ## Setup
 
 1. Get the latest release by

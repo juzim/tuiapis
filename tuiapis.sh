@@ -40,7 +40,12 @@ then
   echo 'Please install JSON.awk. You can find more information is in the README file.'
 fi
 
-if [ -e $CONFIGDIR/config_$NAME.sh ]
+# check if config is needed and exists
+if [ -e $APIDIR/$NAME/config_$NAME.sh ] && [ ! -e $CONFIGDIR/config_$NAME.sh ]
+then
+  printf '%s' "Config for $NAME does not exist. Please copy the config.sh file from the api/$NAME folder to the config folder and fill out all required fields"
+  exit 0
+elif [ -e $CONFIGDIR/config_$NAME.sh ]
 then
   source $CONFIGDIR/config_$NAME.sh
 fi
