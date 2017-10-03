@@ -25,8 +25,6 @@ then
   CONFIGDIR="$(pwd)/config"
 fi
 
-echo $CONFIGDIR
-
 if [ ! -d "$CONFIGDIR" ]; then
   printf '%s' "Config directory '$CONFIGDIR' does not exist"
   exit 0
