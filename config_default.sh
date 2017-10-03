@@ -1,0 +1,5 @@
+WORKDIR="/storage/emulated/0/tuiapis"
+TMPDIR="$WORKDIR/tmp"
+HELPERDIR="$WORKDIR/helper"
+CONFIGDIR="$WORKDIR/config"
+APIDIR="$WORKDIR/apis"

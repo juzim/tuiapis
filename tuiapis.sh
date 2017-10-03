@@ -10,20 +10,32 @@ case $i in
     DEBUG="true"
     shift
     ;;
+    -c=*|--config=*)
+    CONFIGDIR=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+    shift
+    ;;
     *)
           # unknown option
     ;;
 esac
 done
 
+if [ -z "$CONFIGDIR" ]
+then
+  CONFIGDIR="$(pwd)/config"
+fi
+
+echo $CONFIGDIR
+
+if [ ! -d "$CONFIGDIR" ]; then
+  printf '%s' "Config directory '$CONFIGDIR' does not exist"
+  exit 0
+fi
+
+source "$CONFIGDIR/config.sh"
+
 NAME=$1
 shift
-
-WORKDIR=$(pwd)
-TMPDIR="$WORKDIR/tmp"
-HELPERDIR="$WORKDIR/helper"
-CONFIGDIR="$WORKDIR/config"
-APIDIR="$WORKDIR/apis"
 
 if [ ! -f $HELPERDIR/JSON.awk ]
 then
