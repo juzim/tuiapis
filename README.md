@@ -4,6 +4,9 @@ A collection of scripts to get information from APIs and print them out in [t-ui
 
 Video walktrough: https://www.youtube.com/watch?v=mceulRDLyww
 
+*** Needs root and busybox to install awk until we find a better solution ***
+
+
 ## Setup
 
 1. Get the latest release by
